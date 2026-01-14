@@ -63,7 +63,7 @@ body {
 }
 
 main {
-  padding: var(--spacing-600);
+  padding: var(--spacing-1600) var(--spacing-600);
   background: var(--color-stone-100);
 
   @media only screen and (max-width: 600px) {
