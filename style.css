@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+  /* Font Variables */
+  --font-serif: 'Young Serif', serif;
+  --font-sans-serif: 'Outfit', sans-serif;
+
+
+  /* Color Variables */
+  --color-rose-800: hsla(332, 51%, 32%, 1);
+  --color-rose-50: hsla(330, 100%, 98%, 1);
+  --color-stone-900: hsla(24, 5%, 18%, 1);
+  --color-stone-600: hsla(30, 10%, 34%, 1);
+  --color-stone-150: hsla(30, 18%, 87%, 1);
+  --color-stone-100: hsla(30, 54%, 90%, 1);
+  --color-brown-800: hsla(14, 45%, 36%, 1);
+  --color-white: hsla(0, 0%, 100%, 1);
+
+  /* Spacing Variables */
+  --spacing-1600: 128px;
+  --spacing-600: 48px;
+  --spacing-500: 40px;
+  --spacing-400: 32px;
+  --spacing-300: 24px;
+  --spacing-200: 16px;
+  --spacing-150: 12px;
+  --spacing-100: 8px;
+
+  /* Text Variables */
+  --font-weight-default: 300;
+  --font-weight-serif: 400;
+  --font-weight-4: 600;
+
+
+  --font-size-1: 40px;
+  --font-size--mobile: 36px;
+
+  --font-size-2: 28px;
+  --font-size-3: 20px;
+  --font-size-4: 16px;
+ 
+  --line-height-default: normal;
+  --line-height-4: 150%;
+  --line-height-1: 100%;
+
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: var(--font-sans-serif);
+    font-weight: var(--font-weight-default);
+    font-size: var(--font-size-4);
+    line-height: var(--line-height-4);
+    color: var(--color-stone-600);
+}
+
+main {
+  padding: var(--spacing-600);
+  background: var(--color-stone-100);
+
+  @media only screen and (max-width: 600px) {
+    padding: 0;
+  }
+
+}
+
+
+article {
+    max-width: 736px;
+    margin: 0 auto;
+    padding: var(--spacing-500);
+    background-color: #fff;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-500);
+
+    @media only screen and (max-width: 600px) {
+      padding: 0;
+      border-radius: 0;
+    }
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+
+    @media only screen and (max-width: 600px) {
+      border-radius: 0;
+    }
+}
+
+h1 {
+  font-family: var(--font-serif);
+  font-size: var(--font-size-1);
+  font-weight: var(--font-weight-serif);
+  color: var(--color-stone-900);
+  line-height: var(--line-height-default);
+    text-box-trim: trim-both;
+  text-box-edge: cap alphabetic;
+
+  @media only screen and (max-width: 600px) {
+    font-size: var(--font-size--mobile);
+    line-height: var(--line-height-1);
+  }
+}
+
+h2 {
+  font-family: var(--font-serif);
+  font-size: var(--font-size-2);
+  font-weight: var(--font-weight-serif);
+  color: var(--color-brown-800);
+  line-height: var(--line-height-default);
+  text-box-trim: trim-both;
+  text-box-edge: cap alphabetic;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: var(--color-stone-150);
+}
+
+ul, ol {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-100)
+}
+
+li {
+  line-height: var(--line-height-4);
+  margin-left: var(--spacing-200);
+  padding-left: var(--spacing-200);
+}
+
+ul li::marker {
+  font-size: 12px;
+  color: var(--color-brown-800);
+}
+
+ol li::marker {
+  color: var(--color-brown-800);
+    font-weight: var(--font-weight-4);
+
+}
+
+.article__text-stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-400);
+  padding: 0 var(--spacing-400)  var(--spacing-400)  var(--spacing-400);
+}
+
+.article__text-stack__h2-stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-300)
+}
+
+.article__text-stack__callout-box {
+  background-color: var(--color-rose-50);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-200);
+  padding: var(--spacing-300);
+  border-radius: var(--spacing-150);
+}
+
+.article__header-block {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-300);
+}
+
+strong {
+  font-weight: var(--font-weight-4);
+}
+
+
+
+table {
+  border-collapse: collapse;
+}
+
+/* tr {
+  border-bottom: 1px solid var(--color-stone-150);
+  padding: var(--spacing-150)
+} */
+
+td {
+  border-bottom: 1px solid var(--color-stone-150);
+  padding: var(--spacing-150)
+}
+
+.first-cell {
+  padding-left: var(--spacing-300);
+}
+
+.highlight-cell {
+  font-weight: var(--font-weight-4);
+  color: var(--color-brown-800);
+}
+
+.top-row td {
+  padding-top: 0;
+}
+
+.last-row td {
+  border: none;
+  padding-bottom: 0;
+}
