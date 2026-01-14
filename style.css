@@ -117,7 +117,7 @@ h1 {
 h2 {
   font-family: var(--font-serif);
   font-size: var(--font-size-2);
-  font-weight: var(--font-weight-4);
+  font-weight: var(--font-weight-default);
   color: var(--color-brown-800);
   line-height: var(--line-height-default);
   text-box-trim: trim-both;
