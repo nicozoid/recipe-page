@@ -148,7 +148,7 @@ ul, ol {
 
 li {
   line-height: var(--line-height-4);
-  margin-left: var(--spacing-200);
+  margin-left: var(--spacing-300);
   padding-left: var(--spacing-200);
 }
 
@@ -159,7 +159,7 @@ ul li::marker {
 
 ol li::marker {
   color: var(--color-brown-800);
-    font-weight: var(--font-weight-4);
+  font-weight: var(--font-weight-4);
 
 }
 
