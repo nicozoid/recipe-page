@@ -117,11 +117,21 @@ h1 {
 h2 {
   font-family: var(--font-serif);
   font-size: var(--font-size-2);
-  font-weight: var(--font-weight-serif);
+  font-weight: var(--font-weight-4);
   color: var(--color-brown-800);
   line-height: var(--line-height-default);
   text-box-trim: trim-both;
   text-box-edge: cap alphabetic;
+}
+
+h3 {
+  font-family: var(--font-sams-serif);
+  font-size: var(--font-size-3);
+  font-weight: var(--font-weight-4);
+  color: var(--color-brown-800);
+  line-height: var(--line-height-default);
+  /* text-box-trim: trim-both;
+  text-box-edge: cap alphabetic; */
 }
 
 hr {
@@ -157,7 +167,7 @@ ol li::marker {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-400);
-  padding: 0 var(--spacing-400)  var(--spacing-400)  var(--spacing-400);
+  padding: 0;
 }
 
 .article__text-stack__h2-stack {
