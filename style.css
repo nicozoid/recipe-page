@@ -168,12 +168,16 @@ ol li::marker {
   flex-direction: column;
   gap: var(--spacing-400);
   padding: 0;
+
+  @media only screen and (max-width: 600px) {
+    padding: var(--spacing-300)
+  }
 }
 
 .article__text-stack__h2-stack {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-300)
+  gap: var(--spacing-400);
 }
 
 .article__text-stack__callout-box {
